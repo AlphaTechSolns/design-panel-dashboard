@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="./login.css" />
+  <link rel="stylesheet" media="only screen and (max-width: 768px)" href="./login-mobile.css">
+</head>
+
+<body>
+  <a class="desktop-2" target="_blank">
+    <div class="desktop-2-child"></div>
+    <div class="ellipse"></div>
+    <div class="ellipse1"></div>
+    <img class="vector-icon" alt="" src="./public/vector.svg" />
+
+    <img id="authImage" class="frame-icon" alt="" src="./public/signin-image.svg" />
+  </a>
+
+  <div class="authentication-card">
+    <div class="card-headers">
+      <div id="loginLink" class="card-header-link  right-slant">
+        <a  href="javascript:loginMode();" class="card-header-link-text">Login</a>
+      </div>
+      <div id="registerLink" class="card-header-link active left-slant">
+        <a href="javascript:registerMode();" class="card-header-link-text">Register</a>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card-body-text forget-details" >
+        Forgot Password?
+      </div>
+      <div class="card-body-text forget-details" >
+        Enter your Registered Email Id to reset the password
+      </div>
+      <div class="card-body-text reset-details" >
+        Generate New Password
+      </div>
+      <div class="card-body-text reset-details" >
+        We received your reset password request
+      </div>
+      <div class="card-body-text reset-details" >
+        Please Enter your New Password
+      </div>
+      <div class="card-input register-details">
+        <i class="fa fa-user"  style="color: darkgrey;"></i>
+        <input type="text" placeholder="Username">
+      </div>
+      <div class="card-input register-details login-details forget-details">
+        <i class="fa fa-envelope" style="color: darkgrey;"></i>
+        <input type="text" placeholder="Email">
+      </div>
+      <div class="card-input register-details login-details reset-details">
+        <i class="fa fa-lock"  style="color: darkgrey;"></i>
+        <input type="text" placeholder="Password" >
+      </div>
+      <div class="card-input reset-details">
+        <i class="fa fa-lock"  style="color: darkgrey;"></i>
+        <input type="text" placeholder="Confirm Password">
+      </div>
+      <button type="button" class="register-details" >Register</button>        
+      <button type="button" class="login-details" >Login</button>        
+      <button type="button" class="forget-details" onclick="javascript:resetMode();">Send</button>        
+      <button type="button" class="reset-details" onclick="javascript:loginMode();">Change password</button>        
+      <div class="card-body-text register-details" >
+        Already Having an Account? <a href="" >Sign In</a>
+      </div>
+      <div class="card-body-text login-details" >
+        Don't have an Account? <a href="" >Create Account</a>
+      </div>
+      <div class="card-body-text login-details">
+        <a href="javascript:forgetMode();" >Forget Password?</a>
+      </div>
+      <div class="card-body-text forget-details reset-details" >
+        <a href="javascript:loginMode();" style="text-decoration: none;"><b>&larr; Back to Login</b></a>
+      </div>
+
+    </div>
+    </div>
+
+  <script>
+    function clearAllModes(){
+      $("#registerLink").removeClass("active");
+      $("#loginLink").removeClass("active");
+      $(".register-details").css("display","none");
+      $(".login-details").css("display","none");
+      $('.card-headers').css("display","");
+      $('.card-body').css("height","88%");
+      $(".forget-details").css("display","none");
+      $(".reset-details").css("display","none");
+    }
+    function withoutHeaderMode(){
+      $('.card-headers').css("display","none");
+      $('.card-body').css("height","100%");
+    }
+    function forgetMode(){
+      clearAllModes();
+      withoutHeaderMode();
+      $("#authImage").attr("src","./public/forget-image.svg")
+      $(".forget-details").css("display","");
+    }
+    function resetMode(){
+      clearAllModes();
+      withoutHeaderMode();
+      $("#authImage").attr("src","./public/reset-image.svg")
+      $(".reset-details").css("display","");
+    }
+    function loginMode(){
+      clearAllModes();
+      $("#loginLink").addClass("active");
+      $(".login-details").css("display","");
+      $("#authImage").attr("src","./public/signin-image.svg")
+    }
+    function registerMode(){
+      clearAllModes();
+      $("#registerLink").addClass("active");
+      $(".register-details").css("display","");
+      $("#authImage").attr("src","./public/signup-image.svg")
+    }
+    loginMode();
+    var forgotPasswordText = document.getElementById("forgotPasswordText");
+    if (forgotPasswordText) {
+      forgotPasswordText.addEventListener("click", function (e) {
+        // Please sync "Desktop - 4" to the project
+      });
+    }
+
+    var createNewAccount = document.getElementById("createNewAccount");
+    if (createNewAccount) {
+      createNewAccount.addEventListener("click", function (e) {
+        // Please sync "Desktop - 3" to the project
+      });
+    }
+
+    var loginHereText = document.getElementById("loginHereText");
+    if (loginHereText) {
+      loginHereText.addEventListener("click", function (e) {
+        // Please sync "Desktop - 3" to the project
+      });
+    }
+  </script>
+</body>
+
+</html>
