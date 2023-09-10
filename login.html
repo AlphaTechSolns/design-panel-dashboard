@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="./login.css" />
-  <link rel="stylesheet" media="only screen and (max-width: 768px)" href="./login-mobile.css">
+  <link rel="stylesheet" href="assets/css/login.css" />
+  <link rel="stylesheet" media="only screen and (max-width: 768px)" href="assets/css/login-mobile.css">
 </head>
 
 <body>
@@ -17,9 +17,9 @@
     <div class="desktop-2-child"></div>
     <div class="ellipse"></div>
     <div class="ellipse1"></div>
-    <img class="vector-icon" alt="" src="./public/vector.svg" />
+    <img class="vector-icon" alt="" src="assets/img/vector.svg" />
 
-    <img id="authImage" class="frame-icon" alt="" src="./public/signin-image.svg" />
+    <img id="authImage" class="frame-icon" alt="" src="assets/img/signin-image.svg" />
   </a>
 
   <div class="authentication-card">
@@ -63,8 +63,8 @@
         <i class="fa fa-lock"  style="color: darkgrey;"></i>
         <input type="text" placeholder="Confirm Password">
       </div>
-      <button type="button" class="register-details" >Register</button>        
-      <button type="button" class="login-details" >Login</button>        
+      <button type="button" class="register-details" onclick="javascript:loginMode();" >Register</button>
+      <button type="button" class="login-details" onclick="javascript:loadUrl('index.html');">Login</button>
       <button type="button" class="forget-details" onclick="javascript:resetMode();">Send</button>        
       <button type="button" class="reset-details" onclick="javascript:loginMode();">Change password</button>        
       <div class="card-body-text register-details" >
@@ -84,6 +84,9 @@
     </div>
 
   <script>
+  function loadUrl(link){
+  window.location=link;
+  }
     function clearAllModes(){
       $("#registerLink").removeClass("active");
       $("#loginLink").removeClass("active");
@@ -101,26 +104,26 @@
     function forgetMode(){
       clearAllModes();
       withoutHeaderMode();
-      $("#authImage").attr("src","./public/forget-image.svg")
+      $("#authImage").attr("src","assets/img/forget-image.svg")
       $(".forget-details").css("display","");
     }
     function resetMode(){
       clearAllModes();
       withoutHeaderMode();
-      $("#authImage").attr("src","./public/reset-image.svg")
+      $("#authImage").attr("src","assets/img/reset-image.svg")
       $(".reset-details").css("display","");
     }
     function loginMode(){
       clearAllModes();
       $("#loginLink").addClass("active");
       $(".login-details").css("display","");
-      $("#authImage").attr("src","./public/signin-image.svg")
+      $("#authImage").attr("src","assets/img/signin-image.svg")
     }
     function registerMode(){
       clearAllModes();
       $("#registerLink").addClass("active");
       $(".register-details").css("display","");
-      $("#authImage").attr("src","./public/signup-image.svg")
+      $("#authImage").attr("src","assets/img/signup-image.svg")
     }
     loginMode();
     var forgotPasswordText = document.getElementById("forgotPasswordText");
