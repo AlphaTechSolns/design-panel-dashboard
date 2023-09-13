@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"  >
+<html lang="en">
 
 <head>
     <meta charset="utf-8"/>
@@ -74,8 +74,8 @@
         </div>
         <div class="sidebar-wrapper">
             <ul class="nav">
-                <li class=" ">
-                    <a href="index.html">
+                <li class="active ">
+                    <a href="./index.html">
                         <i class="nc-icon nc-bank"></i>
                         <p>Dashboard</p>
                     </a>
@@ -92,10 +92,16 @@
                         <p>Tables</p>
                     </a>
                 </li>
-                <li  class="active">
+                <li>
                     <a href="./charts.html">
                         <i class="fa fa-bar-chart"></i>
                         <p>Charts</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./carousels.html">
+                        <i class="fa fa-bar-chart"></i>
+                        <p>Carousels</p>
                     </a>
                 </li>
                 <li>
@@ -125,7 +131,7 @@
                             <span class="navbar-toggler-bar bar3"></span>
                         </button>
                     </div>
-                    <a class="navbar-brand" href="javascript:;">Charts</a>
+                    <a class="navbar-brand" href="javascript:;">Dashboard</a>
                 </div>
                 <button class="navbar-toggler" type="button"
                         data-toggle="collapse" data-target="#navigation"
@@ -186,79 +192,62 @@
         </nav>
         <!-- End Navbar -->
         <div class="content">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="card ">
-                        <div class="card-header ">
-                            <h5 class="card-title">Doughnut Chart</h5>
-                        </div>
-                        <div class="card-body ">
-                            <div id="donutchart"
-                                 style="width: 100%; height: 500px;"></div>
-                        </div>
+            <div class="row mb-4">
+                <div class="col-lg-1">
+                    <div class="page-header-logo img-fluid">
+                        <img src="assets/img/mike.jpg" style="max-width: 80px;">
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="card ">
-                        <div class="card-header ">
-                            <h5 class="card-title">Pie Chart</h5>
-                        </div>
-                        <div class="card-body ">
-                            <div id="piechart"
-                                 style="width: 100%; height: 500px;"></div>
-                        </div>
-                    </div>
+                <div class="col-lg-11 align-top  ">
+                    <h4 class="mt-1 mb-0">Hello User</h4>
+                    <span class="mt-0">We are welcoming you to the world</span>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="card ">
-                        <div class="card-header ">
-                            <h5 class="card-title">Bar Chart</h5>
+        </div>
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header"><h4 class="card-title">Bootstrap carousel</h4></div>
+                <div class="card-body">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
+                          <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
+                          <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="./assets/img/damir-bosnjak.jpg" alt="First slide" />
+                            <div class="carousel-caption d-none d-md-block">
+                              <h3>First slide</h3>
+                              <p>Eos mutat malis maluisset et, agam ancillae quo te, in vim congue pertinacia.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="./assets/img/jan-sendereks.jpg" alt="Second slide" />
+                            <div class="carousel-caption d-none d-md-block">
+                              <h3>Second slide</h3>
+                              <p>In numquam omittam sea.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="./assets/img/damir-bosnjak.jpg" alt="Third slide" />
+                            <div class="carousel-caption d-none d-md-block">
+                              <h3>Third slide</h3>
+                              <p>Lorem ipsum dolor sit amet, virtute consequat ea qui, minim graeco mel no.</p>
+                            </div>
+                          </div>
                         </div>
-                        <div class="card-body ">
-                            <div id="barChart"
-                                 style="width: 100%; height: 500px;"></div>
-                        </div>
-                    </div>
+                        <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </a>
+                      </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="card ">
-                        <div class="card-header ">
-                            <h5 class="card-title">Bubble Chart</h5>
-                        </div>
-                        <div class="card-body ">
-                            <div id="bubblechart"
-                                 style="width: 100%; height: 500px;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="card ">
-                        <div class="card-header ">
-                            <h5 class="card-title">Area Chart</h5>
-                        </div>
-                        <div class="card-body ">
-                            <div id="areaChart"
-                                 style="width: 100%; height: 500px;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card ">
-                        <div class="card-header ">
-                            <h5 class="card-title">Calendar Chart</h5>
-                        </div>
-                        <div class="card-body ">
-                            <div id="calendarChart"
-                                 style="width: 100%; height: 500px;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            </div> 
         </div>
         <footer class="footer footer-black  footer-white ">
             <div class="container-fluid">
@@ -276,7 +265,7 @@
     </div>
 </div>
 <!--   Core JS Files   -->
-<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="assets/js/core/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
 <!-- Chart JS -->
@@ -292,8 +281,13 @@
 
 <script>
     $(document).ready(function() {
+      // Javascript method's body can be found in assets/assets-for-demo/js/demo.js
       demo.initChartsPages();
     });
+
+
+
+
 </script>
 </body>
 
