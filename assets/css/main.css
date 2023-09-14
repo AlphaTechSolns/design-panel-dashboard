@@ -1,18 +1,27 @@
+body{
+    scroll-behavior: smooth;
+    
+}
 .sidebar {
     background-color: #f8f8ff;
     border-right: 0px !important;
+   
 }
+    
 
 .sidebar[data-color="white"] a, i {
     color: white !important;
+   
 }
+
 
 .sidebar[data-color="white"]:after, .off-canvas-sidebar[data-color="white"]:after {
     background-color: #3cba92;
     border-top-right-radius: 50px;
-
 }
-
+.navbar{
+    border: 0px !important;
+}
 .main-panel {
     background-color: #f8f8ff;
 
