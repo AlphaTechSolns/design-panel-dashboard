@@ -6,7 +6,6 @@ https://www.figma.com/proto/fuclijwFCG80AyLu5Yir2j/Dashboard?type=design&node-id
 Mobile
 https://www.figma.com/proto/fuclijwFCG80AyLu5Yir2j/Dashboard?type=design&node-id=15-869&scaling=scale-down&page-id=0%3A1&starting-point-node-id=15%3A869&show-proto-sidebar=1
 
-
 Authentication
 
 Desktop

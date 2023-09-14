@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8"/>
-    <link rel="apple-touch-icon" sizes="76x76"
-          href="assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link href="assets/img/apple-icon.png" rel="apple-touch-icon"
+          sizes="76x76">
+    <link href="assets/img/favicon.png" rel="icon" type="image/png">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
     <title>
         DP Dashboard
     </title>
@@ -14,61 +14,63 @@
           name='viewport'/>
     <!--     Fonts and icons     -->
     <link
-            rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
     />
 
 
     <link
-            rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap"
+            rel="stylesheet"
     />
     <link
-            rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Hind:wght@400&display=swap"
+            rel="stylesheet"
     />
     <link
-            rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Hind Madurai:wght@500&display=swap"
+            rel="stylesheet"
     />
     <link
-            rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Baloo 2:wght@500&display=swap"
+            rel="stylesheet"
     />
     <link
-            rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+            rel="stylesheet"
     />
     <link
-            rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Avenir:wght@400;500&display=swap"
+            rel="stylesheet"
     />
     <link
-            rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+            rel="stylesheet"
     />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
           rel="stylesheet">
     <!-- CSS Files -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" rel="stylesheet">
     <link href="assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet"/>
+    <link href=" https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.5.5/css/perfect-scrollbar.min.css " rel="stylesheet">
     <!-- Modified CSS File -->
     <link href="assets/css/main.css" rel="stylesheet"/>
 </head>
 
 <body class="">
 <div class="wrapper ">
-    <div class="sidebar" data-color="white" data-active-color="danger">
+    <div class="sidebar" data-active-color="danger" data-color="white">
         <div class="logo">
-            <a href="#"
-               class="simple-text logo-mini">
+            <a class="simple-text logo-mini"
+               href="#">
                 <div class="logo-image-small">
                     <img src="assets/img/logo-frag-1.svg">
-                    <img class="ml-sm-n3"src="assets/img/logo-frag-2.svg">
+                    <img class="ml-sm-n3" src="assets/img/logo-frag-2.svg">
                 </div>
             </a>
-            <a href="#"
-               class="simple-text logo-normal">
+            <a class="simple-text logo-normal"
+               href="#">
                 Design <span class="company-name-color">Panel</span>
             </a>
         </div>
@@ -125,7 +127,7 @@
             <div class="container-fluid">
                 <div class="navbar-wrapper">
                     <div class="navbar-toggle">
-                        <button type="button" class="navbar-toggler">
+                        <button class="navbar-toggler" type="button">
                             <span class="navbar-toggler-bar bar1"></span>
                             <span class="navbar-toggler-bar bar2"></span>
                             <span class="navbar-toggler-bar bar3"></span>
@@ -133,10 +135,10 @@
                     </div>
                     <a class="navbar-brand" href="javascript:;">Dashboard</a>
                 </div>
-                <button class="navbar-toggler" type="button"
-                        data-toggle="collapse" data-target="#navigation"
-                        aria-controls="navigation-index" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                <button aria-controls="navigation-index" aria-expanded="false"
+                        aria-label="Toggle navigation" class="navbar-toggler"
+                        data-target="#navigation" data-toggle="collapse"
+                        type="button">
                     <span class="navbar-toggler-bar navbar-kebab"></span>
                     <span class="navbar-toggler-bar navbar-kebab"></span>
                     <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -151,26 +153,26 @@
                                     <i class="nc-icon nc-zoom-split text-dark"></i>
                                 </div>
                             </div>
-                            <input type="text" value=""
-                                   class="form-control bg-white"
-                                   placeholder="Search">
+                            <input class="form-control bg-white" placeholder="Search"
+                                   type="text"
+                                   value="">
                         </div>
                     </form>
                     <ul class="navbar-nav bg-white">
                         <li class="nav-item btn-rotate dropdown">
-                            <a class="nav-link dropdown-toggle"
-                               href="http://example.com"
-                               id="navbarDropdownMenuLink"
-                               data-toggle="dropdown" aria-haspopup="true"
-                               aria-expanded="false">
-                                <img style="max-width: 30px;border-radius: 50%;"
-                                     src="assets/img/mike.jpg">
+                            <a aria-expanded="false"
+                               aria-haspopup="true"
+                               class="nav-link dropdown-toggle"
+                               data-toggle="dropdown" href="http://example.com"
+                               id="navbarDropdownMenuLink">
+                                <img src="assets/img/mike.jpg"
+                                     style="max-width: 30px;border-radius: 50%;">
                                 <p>
                                     <span class="pl-3 pr-3 d-md-block">Mike Johnathon</span>
                                 </p>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right"
-                                 aria-labelledby="navbarDropdownMenuLink">
+                            <div aria-labelledby="navbarDropdownMenuLink"
+                                 class="dropdown-menu dropdown-menu-right">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another
                                     action</a>
@@ -301,8 +303,8 @@
                                         Points</p>
                                 </div>
                                 <div class="card-body">
-                                    <canvas id="speedChart" width="400"
-                                            height="100"></canvas>
+                                    <canvas height="100" id="speedChart"
+                                            width="400"></canvas>
                                 </div>
                                 <div class="card-footer">
                                     <div class="chart-legend">
@@ -414,80 +416,97 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="card" >
+                            <div class="card">
                                 <div class="card-header"><h4 class="card-title">Recent Orders</h4></div>
                                 <div class="card-body">
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead class="bg-light">
-                                                <tr class="border-0">
-                                                    <th class="border-0">#</th>
-                                                    <th class="border-0">Image</th>
-                                                    <th class="border-0">Product Name</th>
-                                                    <th class="border-0">Product Id</th>
-                                                    <th class="border-0">Quantity</th>
-                                                    <th class="border-0">Price</th>
-                                                    <th class="border-0">Order Time</th>
-                                                    <th class="border-0">Customer</th>
-                                                    <th class="border-0">Status</th>
-                                                </tr>
+                                            <tr class="border-0">
+                                                <th class="border-0">#</th>
+                                                <th class="border-0">Image</th>
+                                                <th class="border-0">Product Name</th>
+                                                <th class="border-0">Product Id</th>
+                                                <th class="border-0">Quantity</th>
+                                                <th class="border-0">Price</th>
+                                                <th class="border-0">Order Time</th>
+                                                <th class="border-0">Customer</th>
+                                                <th class="border-0">Status</th>
+                                            </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>
-                                                        <div class="m-r-10"><img src="./assets/img/damir-bosnjak.jpg" alt="user" class="rounded" width="45"></div>
-                                                    </td>
-                                                    <td>Product #1 </td>
-                                                    <td>id000001 </td>
-                                                    <td>20</td>
-                                                    <td>$80.00</td>
-                                                    <td>27-08-2018 01:22:12</td>
-                                                    <td>Patricia J. King </td>
-                                                    <td><span class="badge-dot badge-brand mr-1"></span>InTransit </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>
-                                                        <div class="m-r-10"><img src="./assets/img/jan-sendereks.jpg" alt="user" class="rounded" width="45"></div>
-                                                    </td>
-                                                    <td>Product #2 </td>
-                                                    <td>id000002 </td>
-                                                    <td>12</td>
-                                                    <td>$180.00</td>
-                                                    <td>25-08-2018 21:12:56</td>
-                                                    <td>Rachel J. Wicker </td>
-                                                    <td><span class="badge-dot badge-success mr-1"></span>Delivered </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>
-                                                        <div class="m-r-10"><img src="./assets/img/damir-bosnjak.jpg" alt="user" class="rounded" width="45"></div>
-                                                    </td>
-                                                    <td>Product #3 </td>
-                                                    <td>id000003 </td>
-                                                    <td>23</td>
-                                                    <td>$820.00</td>
-                                                    <td>24-08-2018 14:12:77</td>
-                                                    <td>Michael K. Ledford </td>
-                                                    <td><span class="badge-dot badge-success mr-1"></span>Delivered </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4</td>
-                                                    <td>
-                                                        <div class="m-r-10"><img src="./assets/img/jan-sendereks.jpg" alt="user" class="rounded" width="45"></div>
-                                                    </td>
-                                                    <td>Product #4 </td>
-                                                    <td>id000004 </td>
-                                                    <td>34</td>
-                                                    <td>$340.00</td>
-                                                    <td>23-08-2018 09:12:35</td>
-                                                    <td>Michael K. Ledford </td>
-                                                    <td><span class="badge-dot badge-success mr-1"></span>Delivered </td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="9"><a href="#" class="btn btn-outline-light float-right">View Details</a></td>
-                                                </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <div class="m-r-10"><img alt="user"
+                                                                             class="rounded"
+                                                                             src="./assets/img/damir-bosnjak.jpg"
+                                                                             width="45">
+                                                    </div>
+                                                </td>
+                                                <td>Product #1</td>
+                                                <td>id000001</td>
+                                                <td>20</td>
+                                                <td>$80.00</td>
+                                                <td>27-08-2018 01:22:12</td>
+                                                <td>Patricia J. King</td>
+                                                <td><span class="badge-dot badge-brand mr-1"></span>InTransit</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>
+                                                    <div class="m-r-10"><img alt="user"
+                                                                             class="rounded"
+                                                                             src="./assets/img/jan-sendereks.jpg"
+                                                                             width="45">
+                                                    </div>
+                                                </td>
+                                                <td>Product #2</td>
+                                                <td>id000002</td>
+                                                <td>12</td>
+                                                <td>$180.00</td>
+                                                <td>25-08-2018 21:12:56</td>
+                                                <td>Rachel J. Wicker</td>
+                                                <td><span class="badge-dot badge-success mr-1"></span>Delivered</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>
+                                                    <div class="m-r-10"><img alt="user"
+                                                                             class="rounded"
+                                                                             src="./assets/img/damir-bosnjak.jpg"
+                                                                             width="45">
+                                                    </div>
+                                                </td>
+                                                <td>Product #3</td>
+                                                <td>id000003</td>
+                                                <td>23</td>
+                                                <td>$820.00</td>
+                                                <td>24-08-2018 14:12:77</td>
+                                                <td>Michael K. Ledford</td>
+                                                <td><span class="badge-dot badge-success mr-1"></span>Delivered</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>
+                                                    <div class="m-r-10"><img alt="user"
+                                                                             class="rounded"
+                                                                             src="./assets/img/jan-sendereks.jpg"
+                                                                             width="45">
+                                                    </div>
+                                                </td>
+                                                <td>Product #4</td>
+                                                <td>id000004</td>
+                                                <td>34</td>
+                                                <td>$340.00</td>
+                                                <td>23-08-2018 09:12:35</td>
+                                                <td>Michael K. Ledford</td>
+                                                <td><span class="badge-dot badge-success mr-1"></span>Delivered</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="9"><a class="btn btn-outline-light float-right" href="#">View
+                                                    Details</a></td>
+                                            </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -501,27 +520,33 @@
                 <div class="col-lg-3">
                     <div class="row">
                         <div class="col">
-                            <div class="card " >
-                                <div class="frame-1">
-                                    <div class="group-58">
-                                      <div class="ellipse-28"></div>
-                                      <img class="ellipse-30"src="./assets/img/ellipse-30.svg" >
-                                      <img class="ellipse-320" src="./assets/img/ellipse-32.svg" >
-                                      <div class="ellipse-31"></div>
-                                      <div class="_82-3">
-                                        <span
-                                          ><span class="_82-3-span">82.3</span
-                                          ><span class="_82-3-span2">%</span></span
-                                        >
-                                      </div>
-                                      <div class="chart">Chart</div>
-                                      <div class="rectangle-115"></div>
-                                      <div class="rectangle-116"></div>
-                                      <div class="withdraw-amount">Withdraw<br />Amount</div>
-                                      <div class="balance-amount">Balance<br />Amount</div>
+                            <div class="card ">
+                                <div class="card-header">
+                                    Chart
+                                </div>
+                                <div class="card-body">
+                                    <div class="frame-1">
+                                        <div class="group-58">
+                                            <div class="ellipse-28"></div>
+                                            <img class="ellipse-30" src="./assets/img/ellipse-30.svg">
+                                            <img class="ellipse-320" src="./assets/img/ellipse-32.svg">
+                                            <div class="ellipse-31"></div>
+                                            <div class="_82-3">
+                                            <span
+                                            ><span class="_82-3-span">82.3</span
+                                            ><span class="_82-3-span2">%</span></span
+                                            >
+                                            </div>
+                                            <div class="chart">Chart</div>
+                                            <div class="rectangle-115"></div>
+                                            <div class="rectangle-116"></div>
+                                            <div class="withdraw-amount">Withdraw<br/>Amount</div>
+                                            <div class="balance-amount">Balance<br/>Amount</div>
+                                        </div>
                                     </div>
-                                  </div>
-                                  
+
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -536,48 +561,48 @@
                                     <div class="_11-am">11 am</div>
                                     <div class="_12-pm">12 pm</div>
                                     <div class="group-44">
-                                      <div class="group-43">
-                                        <div class="rectangle-89"></div>
-                                        <div class="group-42">
-                                          <div class="_03">03</div>
-                                          <div class="mon">Mon</div>
+                                        <div class="group-43">
+                                            <div class="rectangle-89"></div>
+                                            <div class="group-42">
+                                                <div class="_03">03</div>
+                                                <div class="mon">Mon</div>
+                                            </div>
                                         </div>
-                                      </div>
-                                      <div class="ellipse-9"></div>
-                                      <div class="ellipse-10"></div>
-                                      <div class="ellipse-11"></div>
+                                        <div class="ellipse-9"></div>
+                                        <div class="ellipse-10"></div>
+                                        <div class="ellipse-11"></div>
                                     </div>
                                     <div class="group-46">
-                                      <div class="group-38">
-                                        <div class="rectangle-91"></div>
-                                        <div class="group-33">
-                                          <div class="_05">05</div>
-                                          <div class="wed">Wed</div>
+                                        <div class="group-38">
+                                            <div class="rectangle-91"></div>
+                                            <div class="group-33">
+                                                <div class="_05">05</div>
+                                                <div class="wed">Wed</div>
+                                            </div>
                                         </div>
-                                      </div>
-                                      <div class="ellipse-12"></div>
-                                      <div class="ellipse-13"></div>
-                                      <div class="ellipse-14"></div>
+                                        <div class="ellipse-12"></div>
+                                        <div class="ellipse-13"></div>
+                                        <div class="ellipse-14"></div>
                                     </div>
                                     <div class="group-48">
-                                      <div class="group-39">
-                                        <div class="rectangle-92"></div>
-                                        <div class="group-34">
-                                          <div class="_06">06</div>
-                                          <div class="thu">Thu</div>
+                                        <div class="group-39">
+                                            <div class="rectangle-92"></div>
+                                            <div class="group-34">
+                                                <div class="_06">06</div>
+                                                <div class="thu">Thu</div>
+                                            </div>
                                         </div>
-                                      </div>
-                                      <div class="ellipse-18"></div>
+                                        <div class="ellipse-18"></div>
                                     </div>
                                     <div class="group-45">
-                                      <div class="group-37">
-                                        <div class="rectangle-90"></div>
-                                        <div class="group-32">
-                                          <div class="_04">04</div>
-                                          <div class="tue">Tue</div>
+                                        <div class="group-37">
+                                            <div class="rectangle-90"></div>
+                                            <div class="group-32">
+                                                <div class="_04">04</div>
+                                                <div class="tue">Tue</div>
+                                            </div>
                                         </div>
-                                      </div>
-                                      <div class="ellipse-21"></div>
+                                        <div class="ellipse-21"></div>
                                     </div>
                                     <div class="line-11"></div>
                                     <div class="line-13"></div>
@@ -591,171 +616,171 @@
                                     <div class="line-27"></div>
                                     <div class="line-12"></div>
                                     <div class="group-51">
-                                      <div class="rectangle-95"></div>
-                                      <div class="ellipse-25"></div>
-                                      <div class="client-meeting">Client Meeting</div>
-                                      <div class="design-club-client-meeting-to-review-the-final-deisgn">
-                                        Design club client meeting to review the final deisgn
-                                      </div>
+                                        <div class="rectangle-95"></div>
+                                        <div class="ellipse-25"></div>
+                                        <div class="client-meeting">Client Meeting</div>
+                                        <div class="design-club-client-meeting-to-review-the-final-deisgn">
+                                            Design club client meeting to review the final deisgn
+                                        </div>
                                     </div>
                                     <div class="group-50">
-                                      <div class="rectangle-96"></div>
-                                      <div class="ellipse-32"></div>
-                                      <div class="check-list">Check List</div>
-                                      <div class="complete-the-tasks-in-the-check-list">
-                                        Complete the tasks in the check list
-                                      </div>
+                                        <div class="rectangle-96"></div>
+                                        <div class="ellipse-32"></div>
+                                        <div class="check-list">Check List</div>
+                                        <div class="complete-the-tasks-in-the-check-list">
+                                            Complete the tasks in the check list
+                                        </div>
                                     </div>
                                     <div class="group-49">
-                                      <div class="rectangle-97"></div>
-                                      <div class="ellipse-33"></div>
-                                      <div class="course">Course</div>
-                                      <div class="complete-the-ongoing-design-course">
-                                        Complete the ongoing design course
-                                      </div>
-                                    </div>
-                                    <svg
-                                      class="video"
-                                      width="22"
-                                      height="15"
-                                      viewBox="0 0 22 15"
-                                      fill="none"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        d="M14.209 5.11065L19.6002 2.39209C19.7807 2.30111 19.9812 2.25817 20.1828 2.26732C20.3843 2.27648 20.5802 2.33744 20.7519 2.44441C20.9235 2.55138 21.0652 2.70082 21.1635 2.87855C21.2618 3.05628 21.3135 3.2564 21.3136 3.45992V11.5392C21.3135 11.7427 21.2618 11.9428 21.1635 12.1205C21.0652 12.2983 20.9235 12.4477 20.7519 12.5547C20.5802 12.6616 20.3843 12.7226 20.1828 12.7318C19.9812 12.7409 19.7807 12.698 19.6002 12.607L14.209 9.88844V5.11065Z"
-                                        stroke="#0F123F"
-                                        stroke-width="2.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                      <path
-                                        d="M11.8412 0.333008H2.36825C1.0603 0.333008 0 1.40255 0 2.72189V12.2774C0 13.5968 1.0603 14.6663 2.36825 14.6663H11.8412C13.1492 14.6663 14.2095 13.5968 14.2095 12.2774V2.72189C14.2095 1.40255 13.1492 0.333008 11.8412 0.333008Z"
-                                        stroke="#0F123F"
-                                        stroke-width="2.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                    </svg>
-                                  
-                                    <svg
-                                      class="check-list2"
-                                      width="18"
-                                      height="16"
-                                      viewBox="0 0 18 16"
-                                      fill="none"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        d="M0 1.06565L1.58459 2.66412L4.22559 0"
-                                        stroke="#0F123F"
-                                        stroke-width="2.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                      <path
-                                        d="M0 7.45969L1.58459 9.05817L4.22559 6.39404"
-                                        stroke="#0F123F"
-                                        stroke-width="2.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                      <path
-                                        d="M0 13.8537L1.58459 15.4522L4.22559 12.7881"
-                                        stroke="#0F123F"
-                                        stroke-width="2.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                      <path
-                                        d="M7.92383 1.59863H17.4318"
-                                        stroke="#0F123F"
-                                        stroke-width="2.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                      <path
-                                        d="M7.92383 7.99219H17.4318"
-                                        stroke="#0F123F"
-                                        stroke-width="2.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                      <path
-                                        d="M7.92383 14.3862H17.4318"
-                                        stroke="#0F123F"
-                                        stroke-width="2.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                    </svg>
-                                  
-                                    <svg
-                                      class="course2"
-                                      width="20"
-                                      height="19"
-                                      viewBox="0 0 20 19"
-                                      fill="none"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                      <path
-                                        d="M12.7123 13.8922C14.4675 13.8922 15.8904 12.4569 15.8904 10.6863C15.8904 8.91579 14.4675 7.48047 12.7123 7.48047C10.9571 7.48047 9.53418 8.91579 9.53418 10.6863C9.53418 12.4569 10.9571 13.8922 12.7123 13.8922Z"
-                                        stroke="#0F123F"
-                                        stroke-width="2.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                      <path
-                                        d="M10.5938 13.3579V18.1667L12.7126 16.5638L14.8315 18.1667V13.3579"
-                                        stroke="#0F123F"
-                                        stroke-width="2.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                      <path
-                                        d="M7.41557 14.9608H2.11873C1.55681 14.9608 1.0179 14.7356 0.620563 14.3348C0.223223 13.934 0 13.3903 0 12.8235V2.13725C0 0.961763 0.95343 0 2.11873 0H16.9499C17.5118 0 18.0507 0.225174 18.448 0.625986C18.8454 1.0268 19.0686 1.57042 19.0686 2.13725V12.8235C19.0682 13.1983 18.9701 13.5664 18.7842 13.8909C18.5983 14.2154 18.331 14.4848 18.0092 14.6722"
-                                        stroke="#0F123F"
-                                        stroke-width="2.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                      <path
-                                        d="M3.17773 4.27441H15.8901"
-                                        stroke="#0F123F"
-                                        stroke-width="2.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                      <path
-                                        d="M3.17773 7.48047H6.35583"
-                                        stroke="#0F123F"
-                                        stroke-width="2.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                      <path
-                                        d="M3.17773 10.686H5.29663"
-                                        stroke="#0F123F"
-                                        stroke-width="2.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                    </svg>
-                                  
-                                    <div class="group-47">
-                                      <div class="group-40">
-                                        <div class="rectangle-93"></div>
-                                        <div class="group-35">
-                                          <div class="_07">07</div>
-                                          <div class="fri">Fri</div>
+                                        <div class="rectangle-97"></div>
+                                        <div class="ellipse-33"></div>
+                                        <div class="course">Course</div>
+                                        <div class="complete-the-ongoing-design-course">
+                                            Complete the ongoing design course
                                         </div>
-                                      </div>
-                                      <div class="ellipse-15"></div>
-                                      <div class="ellipse-16"></div>
                                     </div>
-                                  </div>
-                                  
-                                
+                                    <svg
+                                            class="video"
+                                            fill="none"
+                                            height="15"
+                                            viewBox="0 0 22 15"
+                                            width="22"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                                d="M14.209 5.11065L19.6002 2.39209C19.7807 2.30111 19.9812 2.25817 20.1828 2.26732C20.3843 2.27648 20.5802 2.33744 20.7519 2.44441C20.9235 2.55138 21.0652 2.70082 21.1635 2.87855C21.2618 3.05628 21.3135 3.2564 21.3136 3.45992V11.5392C21.3135 11.7427 21.2618 11.9428 21.1635 12.1205C21.0652 12.2983 20.9235 12.4477 20.7519 12.5547C20.5802 12.6616 20.3843 12.7226 20.1828 12.7318C19.9812 12.7409 19.7807 12.698 19.6002 12.607L14.209 9.88844V5.11065Z"
+                                                stroke="#0F123F"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2.5"
+                                        />
+                                        <path
+                                                d="M11.8412 0.333008H2.36825C1.0603 0.333008 0 1.40255 0 2.72189V12.2774C0 13.5968 1.0603 14.6663 2.36825 14.6663H11.8412C13.1492 14.6663 14.2095 13.5968 14.2095 12.2774V2.72189C14.2095 1.40255 13.1492 0.333008 11.8412 0.333008Z"
+                                                stroke="#0F123F"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2.5"
+                                        />
+                                    </svg>
+
+                                    <svg
+                                            class="check-list2"
+                                            fill="none"
+                                            height="16"
+                                            viewBox="0 0 18 16"
+                                            width="18"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                                d="M0 1.06565L1.58459 2.66412L4.22559 0"
+                                                stroke="#0F123F"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2.5"
+                                        />
+                                        <path
+                                                d="M0 7.45969L1.58459 9.05817L4.22559 6.39404"
+                                                stroke="#0F123F"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2.5"
+                                        />
+                                        <path
+                                                d="M0 13.8537L1.58459 15.4522L4.22559 12.7881"
+                                                stroke="#0F123F"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2.5"
+                                        />
+                                        <path
+                                                d="M7.92383 1.59863H17.4318"
+                                                stroke="#0F123F"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2.5"
+                                        />
+                                        <path
+                                                d="M7.92383 7.99219H17.4318"
+                                                stroke="#0F123F"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2.5"
+                                        />
+                                        <path
+                                                d="M7.92383 14.3862H17.4318"
+                                                stroke="#0F123F"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2.5"
+                                        />
+                                    </svg>
+
+                                    <svg
+                                            class="course2"
+                                            fill="none"
+                                            height="19"
+                                            viewBox="0 0 20 19"
+                                            width="20"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                                d="M12.7123 13.8922C14.4675 13.8922 15.8904 12.4569 15.8904 10.6863C15.8904 8.91579 14.4675 7.48047 12.7123 7.48047C10.9571 7.48047 9.53418 8.91579 9.53418 10.6863C9.53418 12.4569 10.9571 13.8922 12.7123 13.8922Z"
+                                                stroke="#0F123F"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2.5"
+                                        />
+                                        <path
+                                                d="M10.5938 13.3579V18.1667L12.7126 16.5638L14.8315 18.1667V13.3579"
+                                                stroke="#0F123F"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2.5"
+                                        />
+                                        <path
+                                                d="M7.41557 14.9608H2.11873C1.55681 14.9608 1.0179 14.7356 0.620563 14.3348C0.223223 13.934 0 13.3903 0 12.8235V2.13725C0 0.961763 0.95343 0 2.11873 0H16.9499C17.5118 0 18.0507 0.225174 18.448 0.625986C18.8454 1.0268 19.0686 1.57042 19.0686 2.13725V12.8235C19.0682 13.1983 18.9701 13.5664 18.7842 13.8909C18.5983 14.2154 18.331 14.4848 18.0092 14.6722"
+                                                stroke="#0F123F"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2.5"
+                                        />
+                                        <path
+                                                d="M3.17773 4.27441H15.8901"
+                                                stroke="#0F123F"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2.5"
+                                        />
+                                        <path
+                                                d="M3.17773 7.48047H6.35583"
+                                                stroke="#0F123F"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2.5"
+                                        />
+                                        <path
+                                                d="M3.17773 10.686H5.29663"
+                                                stroke="#0F123F"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2.5"
+                                        />
+                                    </svg>
+
+                                    <div class="group-47">
+                                        <div class="group-40">
+                                            <div class="rectangle-93"></div>
+                                            <div class="group-35">
+                                                <div class="_07">07</div>
+                                                <div class="fri">Fri</div>
+                                            </div>
+                                        </div>
+                                        <div class="ellipse-15"></div>
+                                        <div class="ellipse-16"></div>
+                                    </div>
+                                </div>
+
+
                             </div>
                             <div class="card">
                                 <div class="card-header">
@@ -767,9 +792,9 @@
                                             <div class="row">
                                                 <div class="col-md-2 col-2">
                                                     <div class="avatar">
-                                                        <img src="../assets/img/faces/ayo-ogunseinde-2.jpg"
-                                                             alt="Circle Image"
-                                                             class="img-circle img-no-padding img-responsive">
+                                                        <img alt="Circle Image"
+                                                             class="img-circle img-no-padding img-responsive"
+                                                             src="../assets/img/faces/ayo-ogunseinde-2.jpg">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-7 col-7">
@@ -788,9 +813,9 @@
                                             <div class="row">
                                                 <div class="col-md-2 col-2">
                                                     <div class="avatar">
-                                                        <img src="../assets/img/faces/joe-gardner-2.jpg"
-                                                             alt="Circle Image"
-                                                             class="img-circle img-no-padding img-responsive">
+                                                        <img alt="Circle Image"
+                                                             class="img-circle img-no-padding img-responsive"
+                                                             src="../assets/img/faces/joe-gardner-2.jpg">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-7 col-7">
@@ -809,9 +834,9 @@
                                             <div class="row">
                                                 <div class="col-md-2 col-2">
                                                     <div class="avatar">
-                                                        <img src="../assets/img/faces/clem-onojeghuo-2.jpg"
-                                                             alt="Circle Image"
-                                                             class="img-circle img-no-padding img-responsive">
+                                                        <img alt="Circle Image"
+                                                             class="img-circle img-no-padding img-responsive"
+                                                             src="../assets/img/faces/clem-onojeghuo-2.jpg">
                                                     </div>
                                                 </div>
                                                 <div class="col-ms-7 col-7">
@@ -851,29 +876,26 @@
     </div>
 </div>
 <!--   Core JS Files   -->
-<script src="assets/js/core/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-<script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Chart JS -->
 <script src="assets/js/plugins/chartjs.min.js"></script>
 <!--  Notifications Plugin    -->
 <script src="assets/js/plugins/bootstrap-notify.js"></script>
 <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src=" https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.5.5/dist/perfect-scrollbar.min.js "></script>
 <script src="assets/js/paper-dashboard.min.js?v=2.0.1"
         type="text/javascript"></script>
-<script type="text/javascript"
-        src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://www.gstatic.com/charts/loader.js"
+        type="text/javascript"></script>
 <script src="assets/js/charts.js"></script>
 
 <script>
-    $(document).ready(function() {
-      // Javascript method's body can be found in assets/assets-for-demo/js/demo.js
-      demo.initChartsPages();
+    $(document).ready(function () {
+        demo.initChartsPages();
     });
-   
-
-
-
 </script>
 </body>
 
