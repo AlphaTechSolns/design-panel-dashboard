@@ -324,6 +324,14 @@ body {
     background: rgba(236, 232, 232, 0.38);
 
 }
+.card-body .card-input.verify-details{
+    background: var(--color-white);
+}
+.card-body .verify-details input{
+    background: #EFEFEF !important;
+    margin-left: 5%;
+    border-radius: 25%;
+}
 
 .card-body .card-input input, input::placeholder {
     width: 80%;
@@ -357,4 +365,7 @@ body {
 
 .card-body-text a {
     color: rgba(0, 0, 0, 0.73);
+}
+.card-body-text.verify-details{
+    font-size: var(--font-size-11xl);
 }

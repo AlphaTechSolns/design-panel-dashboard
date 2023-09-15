@@ -71,9 +71,25 @@
             <i class="fa fa-lock" style="color: darkgrey;"></i>
             <input placeholder="Confirm Password" type="text">
         </div>
+        <div class="card-body-text verify-details">
+            Verification Code
+        </div>
+        <div class="card-body-text verify-details">
+            Please Enter your Verification Code
+        </div>
+        <div class="card-body-text verify-details">
+            We have sent an Verification code to an Registered Email
+        </div>
+        <div class="card-input verify-details">
+            <input type="tel">
+            <input type="tel">
+            <input type="tel">
+            <input type="tel">
+        </div>
+        <button class="verify-details" onclick="javascript:resetMode();" type="button">Confirm Code</button>
         <button class="register-details" onclick="javascript:loginMode();" type="button">Register</button>
         <button class="login-details" onclick="javascript:loadUrl('index.html');" type="button">Login</button>
-        <button class="forget-details" onclick="javascript:resetMode();" type="button">Send</button>
+        <button class="forget-details" onclick="javascript:verifyMode();" type="button">Send</button>
         <button class="reset-details" onclick="javascript:loginMode();" type="button">Change password</button>
         <div class="card-body-text register-details">
             Already Having an Account? <a href="">Sign In</a>
@@ -84,7 +100,7 @@
         <div class="card-body-text login-details">
             <a href="javascript:forgetMode();">Forget Password?</a>
         </div>
-        <div class="card-body-text forget-details reset-details">
+        <div class="card-body-text forget-details reset-details verify-details">
             <a href="javascript:loginMode();" style="text-decoration: none;"><b>&larr; Back to Login</b></a>
         </div>
 
@@ -105,6 +121,7 @@
         $('.card-body').css("height", "88%");
         $(".forget-details").css("display", "none");
         $(".reset-details").css("display", "none");
+        $(".verify-details").css("display", "none");
     }
 
     function withoutHeaderMode() {
@@ -133,6 +150,13 @@
         $("#authImage").attr("src", "assets/img/signin-image.svg")
     }
 
+    function verifyMode() {
+        clearAllModes();
+        withoutHeaderMode();
+        $(".verify-details").css("display", "");
+        $("#authImage").attr("src", "assets/img/verify-code.svg")
+    }
+
     function registerMode() {
         clearAllModes();
         $("#registerLink").addClass("active");
@@ -140,7 +164,7 @@
         $("#authImage").attr("src", "assets/img/signup-image.svg")
     }
 
-    loginMode();
+    verifyMode();
     var forgotPasswordText = document.getElementById("forgotPasswordText");
     if (forgotPasswordText) {
         forgotPasswordText.addEventListener("click", function (e) {
