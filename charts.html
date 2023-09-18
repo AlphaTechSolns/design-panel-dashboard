@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <link href="assets/img/logo-frag-1.svg"rel="icon" type="image/png" >
+    <link href="assets/img/logo-frag-2.svg" rel="icon" type="image/png">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+    <title>DP Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+          name='viewport'/>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Hind Madurai:wght@500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo 2:wght@500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Avenir:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet"/>
+    <!-- CSS Files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href=" https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.5.5/css/perfect-scrollbar.min.css " rel="stylesheet"/>
+    <link href="assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet"/>
+    <!-- Modified CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet"/>
+</head>
+
+<body class="">
+<div class="wrapper ">
+    <div class="sidebar" data-active-color="danger" data-color="white">
+        <div class="logo">
+            <a class="simple-text logo-mini"
+               href="#">
+                <div class="logo-image-small">
+                    <img src="assets/img/logo-frag-1.svg">
+                    <img class="ml-sm-n3" src="assets/img/logo-frag-2.svg">
+                </div>
+            </a>
+            <a class="simple-text logo-normal"
+               href="#">
+                Design <span class="company-name-color">Panel</span>
+            </a>
+        </div>
+        <div class="sidebar-wrapper">
+            <ul class="nav">
+                <li class=" ">
+                    <a href="index.html">
+                        <i class="nc-icon nc-bank"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./forms.html">
+                        <i class="nc-icon nc-caps-small"></i>
+                        <p>Forms</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./tables.html">
+                        <i class="fa fa-table"></i>
+                        <p>Tables</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="./charts.html">
+                        <i class="fa fa-bar-chart"></i>
+                        <p>Charts</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./carousels.html">
+                        <i class="fa fa-slideshare"></i>
+                        <p>Carousels</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-lock"></i>
+                        <p>Authentication</p>
+                    </a>
+                </li>
+                <li class="active-pro">
+                    <a href="#">
+                        <i class="fa fa-gear"></i>
+                        <p>Settings</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-panel">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+            <div class="container-fluid">
+                <div class="navbar-wrapper">
+                    <div class="navbar-toggle">
+                        <button class="navbar-toggler" type="button">
+                            <span class="navbar-toggler-bar bar1"></span>
+                            <span class="navbar-toggler-bar bar2"></span>
+                            <span class="navbar-toggler-bar bar3"></span>
+                        </button>
+                    </div>
+                    <a class="navbar-brand" href="javascript:;">Charts</a>
+                </div>
+                <button aria-controls="navigation-index" aria-expanded="false"
+                        aria-label="Toggle navigation" class="navbar-toggler"
+                        data-target="#navigation" data-toggle="collapse"
+                        type="button">
+                    <span class="navbar-toggler-bar navbar-kebab"></span>
+                    <span class="navbar-toggler-bar navbar-kebab"></span>
+                    <span class="navbar-toggler-bar navbar-kebab"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end"
+                     id="navigation">
+                    <form>
+                        <div class="input-group no-border bg-white"
+                             style="right: 20px;">
+                            <div class="input-group-append bg-white">
+                                <div class="input-group-text bg-white">
+                                    <i class="nc-icon nc-zoom-split text-dark"></i>
+                                </div>
+                            </div>
+                            <input class="form-control bg-white" placeholder="Search"
+                                   type="text"
+                                   value="">
+                        </div>
+                    </form>
+                    <ul class="navbar-nav bg-white">
+                        <li class="nav-item btn-rotate dropdown">
+                            <a aria-expanded="false"
+                               aria-haspopup="true"
+                               class="nav-link dropdown-toggle"
+                               data-toggle="dropdown" href="http://example.com"
+                               id="navbarDropdownMenuLink">
+                                <img src="assets/img/mike.jpg"
+                                     style="max-width: 30px;border-radius: 50%;">
+                                <p>
+                                    <span class="pl-3 pr-3 d-md-block">Mike Johnathon</span>
+                                </p>
+                            </a>
+                            <div aria-labelledby="navbarDropdownMenuLink"
+                                 class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another
+                                    action</a>
+                                <a class="dropdown-item" href="#">Something else
+                                    here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-magnify" href="javascript:;">
+                                <i class="nc-icon nc-bell-55 text-dark"></i>
+                                <p>
+                                    <span class="d-lg-none d-md-block">Notifications</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card ">
+                        <div class="card-header ">
+                            <h5 class="card-title">Doughnut Chart</h5>
+                        </div>
+                        <div class="card-body ">
+                            <div id="donutchart"
+                                 style="width: 100%; height: 500px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card ">
+                        <div class="card-header ">
+                            <h5 class="card-title">Pie Chart</h5>
+                        </div>
+                        <div class="card-body ">
+                            <div id="piechart"
+                                 style="width: 100%; height: 500px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card ">
+                        <div class="card-header ">
+                            <h5 class="card-title">Bar Chart</h5>
+                        </div>
+                        <div class="card-body ">
+                            <div id="barChart"
+                                 style="width: 100%; height: 500px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card ">
+                        <div class="card-header ">
+                            <h5 class="card-title">Bubble Chart</h5>
+                        </div>
+                        <div class="card-body ">
+                            <div id="bubblechart"
+                                 style="width: 100%; height: 500px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card ">
+                        <div class="card-header ">
+                            <h5 class="card-title">Area Chart</h5>
+                        </div>
+                        <div class="card-body ">
+                            <div id="areaChart"
+                                 style="width: 100%; height: 500px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card ">
+                        <div class="card-header ">
+                            <h5 class="card-title">Calendar Chart</h5>
+                        </div>
+                        <div class="card-body ">
+                            <div id="calendarChart"
+                                 style="width: 100%; height: 500px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer footer-black  footer-white ">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="credits ml-auto">
+              <span class="copyright">
+                © <script>
+                  document.write(new Date().getFullYear())
+                </script>, made by Mathumitha A
+              </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<!--   Core JS Files   -->
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script crossorigin="anonymous" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Chart JS -->
+<script src="assets/js/plugins/chartjs.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src=" https://cdn.jsdelivr.net/npm/perfect-scrollbar@1.5.5/dist/perfect-scrollbar.min.js "></script>
+<script src="assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script>
+<script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"></script>
+<script src="assets/js/charts.js"></script>
+
+<script>
+    $(document).ready(function () {
+        demo.initChartsPages();
+    });
+</script>
+</body>
+
+</html>

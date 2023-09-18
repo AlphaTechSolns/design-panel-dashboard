@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta content="initial-scale=1, width=device-width" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <script crossorigin="anonymous"
+            integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+            referrerpolicy="no-referrer"
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+            referrerpolicy="no-referrer"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link href="assets/css/login.css" rel="stylesheet"/>
+    <link href="assets/css/login-mobile.css" media="only screen and (max-width: 768px)" rel="stylesheet">
+</head>
+
+<body>
+<a class="desktop-2" target="_blank">
+    <div class="desktop-2-child"></div>
+    <div class="ellipse"></div>
+    <div class="ellipse1"></div>
+    <img alt="" class="vector-icon" src="assets/img/vector.svg"/>
+
+    <img alt="" class="frame-icon" id="authImage" src="assets/img/signin-image.svg"/>
+</a>
+
+<div class="authentication-card">
+    <div class="card-headers">
+        <div class="card-header-link  right-slant" id="loginLink">
+            <a class="card-header-link-text" href="javascript:loginMode();">Login</a>
+        </div>
+        <div class="card-header-link active left-slant" id="registerLink">
+            <a class="card-header-link-text" href="javascript:registerMode();">Register</a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="card-body-text forget-details">
+            Forgot Password?
+        </div>
+        <div class="card-body-text forget-details">
+            Enter your Registered Email Id to reset the password
+        </div>
+        <div class="card-body-text reset-details">
+            Generate New Password
+        </div>
+        <div class="card-body-text reset-details">
+            We received your reset password request
+        </div>
+        <div class="card-body-text reset-details">
+            Please Enter your New Password
+        </div>
+        <div class="card-input register-details">
+            <i class="fa fa-user" style="color: darkgrey;"></i>
+            <input placeholder="Username" type="text">
+        </div>
+        <div class="card-input register-details login-details forget-details">
+            <i class="fa fa-envelope" style="color: darkgrey;"></i>
+            <input placeholder="Email" type="text">
+        </div>
+        <div class="card-input register-details login-details reset-details">
+            <i class="fa fa-lock" style="color: darkgrey;"></i>
+            <input placeholder="Password" type="text">
+        </div>
+        <div class="card-input reset-details">
+            <i class="fa fa-lock" style="color: darkgrey;"></i>
+            <input placeholder="Confirm Password" type="text">
+        </div>
+        <div class="card-body-text verify-details">
+            Verification Code
+        </div>
+        <div class="card-body-text verify-details">
+            Please Enter your Verification Code
+        </div>
+        <div class="card-body-text verify-details">
+            We have sent an Verification code to an Registered Email
+        </div>
+        <div class="card-input verify-details">
+            <input type="tel">
+            <input type="tel">
+            <input type="tel">
+            <input type="tel">
+        </div>
+        <button class="verify-details" onclick="javascript:resetMode();" type="button">Confirm Code</button>
+        <button class="register-details" onclick="javascript:loginMode();" type="button">Register</button>
+        <button class="login-details" onclick="javascript:loadUrl('index.html');" type="button">Login</button>
+        <button class="forget-details" onclick="javascript:verifyMode();" type="button">Send</button>
+        <button class="reset-details" onclick="javascript:loginMode();" type="button">Change password</button>
+        <div class="card-body-text register-details">
+            Already Having an Account? <a href="javascript:loginMode();">Sign In</a>
+        </div>
+        <div class="card-body-text login-details">
+            Don't have an Account? <a href="javascript:registerMode();">Create Account</a>
+        </div>
+        <div class="card-body-text login-details">
+            <a href="javascript:forgetMode();">Forget Password?</a>
+        </div>
+        <div class="card-body-text forget-details reset-details verify-details">
+            <a href="javascript:loginMode();" style="text-decoration: none;"><b>&larr; Back to Login</b></a>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function loadUrl(link) {
+        window.location = link;
+    }
+
+    function clearAllModes() {
+        $("#registerLink").removeClass("active");
+        $("#loginLink").removeClass("active");
+        $(".register-details").css("display", "none");
+        $(".login-details").css("display", "none");
+        $('.card-headers').css("display", "");
+        $('.card-body').css("height", "88%");
+        $(".forget-details").css("display", "none");
+        $(".reset-details").css("display", "none");
+        $(".verify-details").css("display", "none");
+    }
+
+    function withoutHeaderMode() {
+        $('.card-headers').css("display", "none");
+        $('.card-body').css("height", "100%");
+    }
+
+    function forgetMode() {
+        clearAllModes();
+        withoutHeaderMode();
+        $("#authImage").attr("src", "assets/img/forget-image.svg")
+        $(".forget-details").css("display", "");
+    }
+
+    function resetMode() {
+        clearAllModes();
+        withoutHeaderMode();
+        $("#authImage").attr("src", "assets/img/reset-image.svg")
+        $(".reset-details").css("display", "");
+    }
+
+    function loginMode() {
+        clearAllModes();
+        $("#loginLink").addClass("active");
+        $(".login-details").css("display", "");
+        $("#authImage").attr("src", "assets/img/signin-image.svg")
+    }
+
+    function verifyMode() {
+        clearAllModes();
+        withoutHeaderMode();
+        $(".verify-details").css("display", "");
+        $("#authImage").attr("src", "assets/img/verify-code.svg")
+    }
+
+    function registerMode() {
+        clearAllModes();
+        $("#registerLink").addClass("active");
+        $(".register-details").css("display", "");
+        $("#authImage").attr("src", "assets/img/signup-image.svg")
+    }
+
+    verifyMode();
+    var forgotPasswordText = document.getElementById("forgotPasswordText");
+    if (forgotPasswordText) {
+        forgotPasswordText.addEventListener("click", function (e) {
+            // Please sync "Desktop - 4" to the project
+        });
+    }
+
+    var createNewAccount = document.getElementById("createNewAccount");
+    if (createNewAccount) {
+        createNewAccount.addEventListener("click", function (e) {
+            // Please sync "Desktop - 3" to the project
+        });
+    }
+
+    var loginHereText = document.getElementById("loginHereText");
+    if (loginHereText) {
+        loginHereText.addEventListener("click", function (e) {
+            // Please sync "Desktop - 3" to the project
+        });
+    }
+</script>
+</body>
+
+</html>
