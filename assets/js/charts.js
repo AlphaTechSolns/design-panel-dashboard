@@ -140,10 +140,35 @@ function drawChart() {
             title: "Red Sox Attendance",
             height: 350,
         };
-
         chart.draw(dataTable, options);
+    }
+    if(ifChartNeeded("donut_single")){
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Balances');
+        data.addColumn('number', 'Percentage');
+        data.addRows([
+            ['Withdraw Amount', 25],
+            ['Balance Amount', 37],
+            ['', 38],
+        ]);
+
+        var options = {
+            pieHole: 0.55,
+            pieSliceText: 'none',
+            slices: {
+                0: {offset: 0.10, color: '#168743'},
+                1: {offset: 0.08, color: '0F123F'},
+                2: {color: '#BDBDBD'
+                }
+            },
+            legend: 'none',
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donut_single'));
+        chart.draw(data, options);
 
     }
+
 }
 
 demo = {

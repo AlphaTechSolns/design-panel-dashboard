@@ -995,3 +995,14 @@ body{
   line-height: 1.428571429;
   border-radius: 15px;
 }
+.calendar-day-tabs{
+    height: 80px;
+}
+.calendar-day-tab{
+    background: #f8f8ff;
+    border-radius: 13px;
+    height: 100%;
+    width: 20%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
